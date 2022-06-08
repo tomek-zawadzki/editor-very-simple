@@ -2,4 +2,46 @@
 
 @import "_variables";
 @import "modules/hello.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(10, 10, 69);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title__main {
+  color: white;
+}
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+  &__window {
+    width: 450px;
+    height: 300px;
+    border-radius: 8px;
+  }
+}
+
+.button {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 16px;
+  &__load {
+    background-color: rgb(28, 167, 214);
+    width: 60px;
+    border-radius: 4px;
+  }
+  &__save {
+    background-color: rgb(223, 18, 18);
+    margin-right: 6px;
+    width: 60px;
+    border-radius: 4px;
+  
+
+  }
+}
