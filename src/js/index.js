@@ -8,15 +8,26 @@ import "../scss/main.scss";
 
 console.log("HELLO 🚀");
 
-const textarea = document.querySelector('.textarea.js');
-const save = document.querySelector('.save--js');
-const load = document.querySelector('.load--js');
+const textarea = document.querySelector(".textarea--js");
+const save = document.querySelector(".save--js");
+const load = document.querySelector(".load--js");
 
-save.addEventListener('click', (e) => {
+/*
+const entry = localStorage.getItem('entry');
+let result = '';
+
+if (entry) {
+  console.log(`${entry}`);
+  result = entry;
+}
+textarea.value = result;
+*/
+
+save.addEventListener("click", (e) => {
   e.preventDefault();
-  localStorage.setItem('entry', textarea.value);
+  localStorage.setItem("entry", textarea.value);
 });
-load.addEventListener('click', (e) => {
+load.addEventListener("click", (e) => {
   e.preventDefault();
-  textarea.value = localStorage.getItem('entry');
+  textarea.value = localStorage.getItem("entry");
 });
